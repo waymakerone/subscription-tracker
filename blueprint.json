@@ -1,0 +1,80 @@
+{
+  "name": "Subscription Tracker",
+  "slug": "subscription-tracker",
+  "description": "Track every SaaS subscription, monitor costs, get renewal alerts, and identify redundancies — powered by Commander Tables, Calendar, and Spreadsheets. Replaces Zylo, Torii, and Cledara.",
+  "category": "tool",
+  "framework": "react",
+  "tags": ["react", "typescript", "subscriptions", "saas", "finance", "renewals", "cost-management", "spend-analysis"],
+  "is_featured": true,
+  "difficulty": "beginner",
+  "estimated_time": "2-3 hours",
+  "commander_tools": ["Tables", "Calendar", "Spreadsheets", "Email/Journeys", "Automations", "Goals"],
+  "app_type": "ex",
+  "sections": [
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "purpose": "Total monthly/annual spend, upcoming renewals, spend by category donut, cost trend chart, redundancy alerts",
+      "contentQuestions": [
+        "What key metrics should appear at the top? (total monthly spend, annual spend, upcoming renewals count, average cost per subscription)",
+        "What charts show spend trends? (monthly cost trend line, category breakdown donut)",
+        "What alerts should surface? (renewals this week, redundant tools, cancellation deadlines)"
+      ],
+      "designNotes": "Sky blue #0EA5E9 primary. Metric cards in a 4-column grid. Charts side by side below. Alerts panel with warning/danger colour coding. Geist font with tabular figures for amounts."
+    },
+    {
+      "id": "subscription-list",
+      "name": "Subscription List",
+      "purpose": "All subscriptions in a filterable table with status, cost, renewal date, owner, and utilisation",
+      "contentQuestions": [
+        "What columns should the table show? (name, vendor, category, cost, billing cycle, next renewal, status, owner, seats used/purchased)",
+        "What filters are needed? (status, category, billing cycle, owner, cost range)",
+        "What quick actions should each row support? (edit, pause, cancel, view cost history)"
+      ],
+      "designNotes": "Status badges: active=green, trial=blue, paused=yellow, cancelled=red, expired=grey. Cost column right-aligned with normalised monthly equivalent shown in muted text. Seat utilisation as a mini progress bar."
+    },
+    {
+      "id": "add-subscription",
+      "name": "Add Subscription",
+      "purpose": "Form to add/edit a subscription with cost, billing cycle, category, owner, seat counts",
+      "contentQuestions": [
+        "What fields are required? (name, cost, billing cycle, next renewal date, start date, status)",
+        "What fields are optional? (vendor, category, owner, seats, login URL, notes, tags, cancellation notice days)",
+        "Should the form support auto-renew toggle and end date for fixed-term subscriptions?"
+      ],
+      "designNotes": "Modal form with clear sections: Basics, Cost & Billing, Ownership & Seats, Details. Currency selector next to amount. Billing cycle as radio buttons. Category dropdown with colour dots."
+    },
+    {
+      "id": "renewals-calendar",
+      "name": "Renewals Calendar",
+      "purpose": "Calendar view of upcoming renewals synced to Commander Calendar with alerts",
+      "contentQuestions": [
+        "What calendar views are needed? (month view with renewal dots, week view with detail cards)",
+        "What should each renewal event show? (subscription name, cost, auto-renew status, cancellation deadline)",
+        "How should alerts work? (email reminders at 30, 7, and 1 day before renewal)"
+      ],
+      "designNotes": "Month view with coloured dots on renewal dates. Click a date to see renewal details in a side panel. Upcoming renewals panel on the right. Warning badges for cancellation deadlines."
+    },
+    {
+      "id": "cost-analysis",
+      "name": "Cost Analysis",
+      "purpose": "Spend breakdown by category, monthly trend chart, annual projection, budget vs actual via Spreadsheets",
+      "contentQuestions": [
+        "What charts are needed? (spend by category donut, monthly trend line, annual projection bar)",
+        "How should budget vs actual work? (per-category budget limits with progress bars)",
+        "What export options exist? (Commander Spreadsheet with monthly summary, CSV export)"
+      ],
+      "designNotes": "Use recharts for all charts. Category colours from st_categories.colour. Budget progress bars: green under 80%, yellow 80-100%, red over 100%. Annual projection as a stacked bar showing committed vs projected spend."
+    }
+  ],
+  "design": {
+    "colorPalette": "Clean — sky blue (#0EA5E9) primary, white background, green for active/healthy, amber for renewing soon, red for expired/cancelled",
+    "typography": "Geist sans-serif, tabular figures for amounts",
+    "mood": "Clear, organized, cost-conscious"
+  },
+  "what_you_build": "A subscription tracking app with renewal alerts, cost analysis, redundancy detection, and budget monitoring. Replaces Zylo, Torii, and Cledara.",
+  "starter_prompt": "I want to build a subscription tracker using the WaymakerOS Subscription Tracker blueprint. Use host_blueprint_get with blueprint_id \"subscription-tracker\" to get the full blueprint, then guide me through building it.",
+  "seo_title": "Subscription Tracker App Template — Build with AI | WaymakerOS",
+  "seo_description": "Build a custom SaaS subscription tracker with renewal alerts, cost analysis, and redundancy detection. Replaces Zylo and Torii — built on your data, in your workspace.",
+  "seo_keywords": ["subscription tracker template", "saas management app builder", "subscription cost analysis tool"]
+}
