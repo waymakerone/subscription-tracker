@@ -4,11 +4,27 @@
   "description": "Track every SaaS subscription, monitor costs, get renewal alerts, and identify redundancies — powered by Commander Tables, Calendar, and Spreadsheets. Replaces Zylo, Torii, and Cledara.",
   "category": "tool",
   "framework": "react",
-  "tags": ["react", "typescript", "subscriptions", "saas", "finance", "renewals", "cost-management", "spend-analysis"],
+  "tags": [
+    "react",
+    "typescript",
+    "subscriptions",
+    "saas",
+    "finance",
+    "renewals",
+    "cost-management",
+    "spend-analysis"
+  ],
   "is_featured": true,
   "difficulty": "beginner",
   "estimated_time": "2-3 hours",
-  "commander_tools": ["Tables", "Calendar", "Spreadsheets", "Email/Journeys", "Automations", "Goals"],
+  "commander_tools": [
+    "Tables",
+    "Calendar",
+    "Spreadsheets",
+    "Email/Journeys",
+    "Automations",
+    "Goals"
+  ],
   "app_type": "ex",
   "sections": [
     {
@@ -76,5 +92,12 @@
   "starter_prompt": "I want to build a subscription tracker using the WaymakerOS Subscription Tracker blueprint. Use host_blueprint_get with blueprint_id \"subscription-tracker\" to get the full blueprint, then guide me through building it.",
   "seo_title": "Subscription Tracker App Template — Build with AI | WaymakerOS",
   "seo_description": "Build a custom SaaS subscription tracker with renewal alerts, cost analysis, and redundancy detection. Replaces Zylo and Torii — built on your data, in your workspace.",
-  "seo_keywords": ["subscription tracker template", "saas management app builder", "subscription cost analysis tool"]
+  "seo_keywords": [
+    "subscription tracker template",
+    "saas management app builder",
+    "subscription cost analysis tool"
+  ],
+  "topics": [
+    "finance"
+  ]
 }
